@@ -7,7 +7,7 @@ body
 {
     font-family: Helvetica, Arial;
     margin: 0;
-    background-color: #ffeff5;
+    background-color: #ecf0f1;
 }
 
 #app-cover
@@ -44,7 +44,7 @@ body
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: #fff;
+    background-color: #ecf0f1;
     opacity: 0.51;
     z-index: 2;
 }
@@ -81,7 +81,7 @@ a
     right: 15px;
     left: 15px;
     padding: 13px 22px 10px 184px;
-    background-color:#95a5a6;
+    background-color:#ecf0f1;
     border-radius: 15px 15px 0 0;
     -webkit-transition: 0.3s ease top;
     transition: 0.3s ease top;
