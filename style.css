@@ -54,6 +54,24 @@ body
     position: relative;
     height: 100%;
     z-index: 3;
+    margin: auto;
+    text-align: center;
+}
+
+a
+{
+    text-decoration: none;
+    color: #2980b9
+}
+
+#download-cv
+{
+    position: relative;
+    height: 100%;
+    z-index: 3;
+    margin: auto;
+    text-align: center;
+    color: #2980b9
 }
 
 #player-track
@@ -63,7 +81,7 @@ body
     right: 15px;
     left: 15px;
     padding: 13px 22px 10px 184px;
-    background-color: #fff7f7;
+    background-color:#95a5a6;
     border-radius: 15px 15px 0 0;
     -webkit-transition: 0.3s ease top;
     transition: 0.3s ease top;
