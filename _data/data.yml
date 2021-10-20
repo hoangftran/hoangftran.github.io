@@ -23,28 +23,25 @@ education:
 skills:
   - category: Programming
     skill: 
-      - Python
-      - SQL
-      - PySpark
+      - <li>Python</li>
+      - <li>SQL</li>
+      - <li>PySpark</li>
   - category: Frameworks
     skill:
-      - Scikit-learn
-      - Tensorflow
-      - Pytorch
-      - Flask
+      - <li>Scikit-learn</li>
+      - <li>Tensorflow</li>
+      - <li>Pytorch</li>
+      - <li>Flask</li>
   - category: Tools
     skill:
-      - Git/Github 
-      - Jupyter Notebook
-      - Power BI
-      - Azure Machine Learning Service
+      - <li>Git/Github</li>
+      - <li>Jupyter Notebook</li>
+      - <li>Power BI</li>
+      - <li>Azure Machine Learning Service</li>
 
 # Profile
 profile: |
-  Fresher Data Scientist with experience in Data Analysis skills, have the ability to build components for collecting, cleaning and
-  processing a large amount of data. Be able to create dashboards, analyses reports to monitor performance metrics. I also have
-  experience in applying Machine Learning and Deep Learning algorithms to solving Natural Language Processing problems, as well
-  as scripting language like Python.
+  I am a Fresher Data Scientist with experience in Data Analysis skills, have the ability to build components for collecting, cleaning and processing a large amount of data. Be able to create dashboards, analyses reports to monitor performance metrics. I also have experience in applying Machine Learning and Deep Learning algorithms to solving Natural Language Processing problems, as well as scripting language like Python.
 
 # Experience
 experience:
@@ -52,8 +49,8 @@ experience:
     time: Apr 2021 – Jun 2021
     company: Katalon
     details: |
-      <li>Build Machine Learning pipeline to extract tutorials from single document using Spacy</li>
-      <li>Generate test script for automation testing based on tutorials extracted automatically</li>
+      <li>Build Machine Learning pipeline to extract tutorials from single document using Spacy.</li>
+      <li>Generate test script for automation testing based on tutorials extracted automatically.</li>
     technologies_used: | 
       Scrapy, Spacy, Natural Language Processing
   
@@ -61,11 +58,9 @@ experience:
     time: Feb 2020 – Feb 2021
     company: FPT Telecom
     details: |
-      <li>Design and build backend for FPT Telecom Chatbot with 60 percent of customer support rate over
-        10000 customer per month using Flask API</li>
-      <li>Implement intent classification and entity extraction model with 0.993 accuracy using Rasa frame-
-        work</li>
-      <li>Track and analyze the performance of Chatbot using Jupyter Notebook and Power BI</li>
+      <li>Design and build backend for FPT Telecom Chatbot with 60 percent of customer support rate over 10000 customer per month using Flask API.</li>
+      <li>Implement intent classification and entity extraction model with 0.993 accuracy using Rasa framework.</li>
+      <li>Track and analyze the performance of Chatbot using Jupyter Notebook and Power BI.</li>
     technologies_used: | 
       Flask API, Rasa, Jupyter Notebook, Power BI
 
@@ -84,14 +79,13 @@ projects:
   - title: Chatbot for UIT Fanpage
     link: https://github.com/hoangftran/uit-thesis-chatbot
     details: |
-      Build a chatbot for UIT Facebook page that help students at UIT to search information about their time table, tuition and
-      allow students to report their problems while studying at UIT
+      Build a chatbot for UIT Facebook page that help students at UIT to search information about their time table, tuition and allow students to report their problems while studying at UIT.
 
   - title: MOMO Recommendation System 
-    link: github.com//hoangftran/FivX-Momo
+    link: https://www.github.com//hoangftran/FivX-Momo
     details: |
       Implement recommendation model to recommend Mshop based on user’s history and references using ALS algorithm on
-      Spark and build backend using Flask API
+      Spark and build backend using Flask API.
 
 # Volunteering
 volunteering:
