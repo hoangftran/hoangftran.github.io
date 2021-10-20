@@ -1,77 +1,73 @@
-name: John Doe
+name: Hoang Tran
 support_dark_mode: true
 fork: true
 
 # Sidebar
 contact:
-  email: info@johndoe.com
-  github: johndoe
-  linkedin: johndoe
-  phone: 
+  email: hoangftran125@gmail.com
+  github: hoangftran
+  linkedin: hoang-tran-4339b4213
+  phone: +84915498459
   gitlab: 
   twitter: 
 
 languages:
-  - idiom: English
-  - idiom: Russian
-  - idiom: French
+  - idiom: Vietnamese (native)
+  - idiom: English (IELTS 6.5 Overall)
 
 education:
-  - degree: MSc in Informatics
-    time: 2014-2016
-    university: Ionian University
-
-  - degree: BSc in Computer Science
-    time: 2010-2014
-    university: Ionian University
+  - degree: Information System
+    time: Sep 2016 – Aug 2021
+    university: University of Information Technology
 
 skills:
-  - category: Backend
+  - category: Programming languages
     skill: 
-      - Go
-      - Rust
-  - category: Frontend
+      - Python
+      - SQL
+      - PySpark
+  - category: Frameworks
     skill:
-      - React
-      - Typescript
-  - category: DevOps
+      - Scikit-learn
+      - Tensorflow
+      - Pytorch
+      - Flask
+  - category: Tools
     skill:
-      - Docker
-      - Kubernetes 
+      - Git/Github 
+      - Jupyter Notebook
+      - Power BI
+      - Azure Machine Learning Service
 
 # Profile
 profile: |
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
-  fugiat nulla pariatur.
+  Fresher Data Scientist with experience in Data Analysis skills, have the ability to build components for collecting, cleaning and
+  processing a large amount of data. Be able to create dashboards, analyses reports to monitor performance metrics. I also have
+  experience in applying Machine Learning and Deep Learning algorithms to solving Natural Language Processing problems, as well
+  as scripting language like Python.
 
 # Experience
 experience:
-  - role: Software Engineer
-    time: 2020-Present
-    company: Google
+  - role: AI Engineer Intern
+    time: Apr 2021 – Jun 2021
+    company: Katalon
     details: |
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
-      fugiat nulla pariatur.
+      - Build Machine Learning pipeline to extract tutorials from single document using Spacy
+      - Generate test script for automation testing based on tutorials extracted automatically
     technologies_used: | 
-      Go, Angular, Typescript, C++
+      Scrapy, Spacy, Natural Language Processing
   
-  - role: Researcher
-    time: 2016-2020
-    company: Microsoft
+  - role: Data Scientist Intern
+    time: Feb 2020 – Feb 2021
+    company: FPT Telecom
     details: |
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
-      fugiat nulla pariatur.
+      - Design and build backend for FPT Telecom Chatbot with 60 percent of customer support rate over
+        10000 customer per month using Flask API
+      - Implement intent classification and entity extraction model with 0.993 accuracy using Rasa frame-
+        work
+      - Track and analyze the performance of Chatbot using Jupyter Notebook and Power BI
     technologies_used: | 
-      Python, Tensorflow, Keras, Matlab
+      Flask API, Rasa, Jupyter Notebook, Power BI
 
 publications:
   - title: Random title of paper. An interesting one.
@@ -85,24 +81,34 @@ publications:
     conference: Some conference again, 2018
 
 projects:
-  - title: Cool Project 
-    link: #
+  - title: Chatbot for UIT Fanpage
+    link: https://github.com/hoangftran/uit-thesis-chatbot
     details: |
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-      tempor incididunt ut labore et dolore magna aliqua.
+      Build a chatbot for UIT Facebook page that help students at UIT to search information about their time table, tuition and
+      allow students to report their problems while studying at UIT
 
-  - title: Cool Project 
-    link: #
+  - title: MOMO Recommendation System 
+    link: github.com//hoangftran/FivX-Momo
     details: |
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-      tempor incididunt ut labore et dolore magna aliqua.
+      Implement recommendation model to recommend Mshop based on user’s history and references using ALS algorithm on
+      Spark and build backend using Flask API
 
 # Volunteering
 volunteering:
-  - time: 2020-Present
-    role: PR Manager
-    company: Some random organization
+  - time: Ongoing
+    role: Dataquest
+    company: Data Scientist Path
     details: |
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+       
+
+  - time: 2020
+    role: VEF Academy
+    company: Data Analytics Course
+    details: |
+       
+
+  - time: 2019
+    role: Facebook Developer Circles VietNam Innovation Challenge
+    company: Data Scientist track
+    details: |
+      
