@@ -1,0 +1,638 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Tran Van Hoang</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	text-indent: -1.7em;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC', 'Noto Sans CJK KR'; }
+
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC', 'Noto Sans Mono CJK KR'; }
+
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC', 'Noto Sans CJK KR'; }
+
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC', 'Noto Sans Mono CJK KR'; }
+
+.highlight-default {
+}
+.highlight-gray {
+	color: rgb(155,154,151);
+}
+.highlight-brown {
+	color: rgb(100,71,58);
+}
+.highlight-orange {
+	color: rgb(217,115,13);
+}
+.highlight-yellow {
+	color: rgb(223,171,1);
+}
+.highlight-teal {
+	color: rgb(15,123,108);
+}
+.highlight-blue {
+	color: rgb(11,110,153);
+}
+.highlight-purple {
+	color: rgb(105,64,165);
+}
+.highlight-pink {
+	color: rgb(173,26,114);
+}
+.highlight-red {
+	color: rgb(224,62,62);
+}
+.highlight-gray_background {
+	background: rgb(235,236,237);
+}
+.highlight-brown_background {
+	background: rgb(233,229,227);
+}
+.highlight-orange_background {
+	background: rgb(250,235,221);
+}
+.highlight-yellow_background {
+	background: rgb(251,243,219);
+}
+.highlight-teal_background {
+	background: rgb(221,237,234);
+}
+.highlight-blue_background {
+	background: rgb(221,235,241);
+}
+.highlight-purple_background {
+	background: rgb(234,228,242);
+}
+.highlight-pink_background {
+	background: rgb(244,223,235);
+}
+.highlight-red_background {
+	background: rgb(251,228,228);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(55, 53, 47, 0.6);
+	fill: rgba(55, 53, 47, 0.6);
+}
+.block-color-brown {
+	color: rgb(100,71,58);
+	fill: rgb(100,71,58);
+}
+.block-color-orange {
+	color: rgb(217,115,13);
+	fill: rgb(217,115,13);
+}
+.block-color-yellow {
+	color: rgb(223,171,1);
+	fill: rgb(223,171,1);
+}
+.block-color-teal {
+	color: rgb(15,123,108);
+	fill: rgb(15,123,108);
+}
+.block-color-blue {
+	color: rgb(11,110,153);
+	fill: rgb(11,110,153);
+}
+.block-color-purple {
+	color: rgb(105,64,165);
+	fill: rgb(105,64,165);
+}
+.block-color-pink {
+	color: rgb(173,26,114);
+	fill: rgb(173,26,114);
+}
+.block-color-red {
+	color: rgb(224,62,62);
+	fill: rgb(224,62,62);
+}
+.block-color-gray_background {
+	background: rgb(235,236,237);
+}
+.block-color-brown_background {
+	background: rgb(233,229,227);
+}
+.block-color-orange_background {
+	background: rgb(250,235,221);
+}
+.block-color-yellow_background {
+	background: rgb(251,243,219);
+}
+.block-color-teal_background {
+	background: rgb(221,237,234);
+}
+.block-color-blue_background {
+	background: rgb(221,235,241);
+}
+.block-color-purple_background {
+	background: rgb(234,228,242);
+}
+.block-color-pink_background {
+	background: rgb(244,223,235);
+}
+.block-color-red_background {
+	background: rgb(251,228,228);
+}
+.select-value-color-default { background-color: rgba(206,205,202,0.5); }
+.select-value-color-gray { background-color: rgba(155,154,151, 0.4); }
+.select-value-color-brown { background-color: rgba(140,46,0,0.2); }
+.select-value-color-orange { background-color: rgba(245,93,0,0.2); }
+.select-value-color-yellow { background-color: rgba(233,168,0,0.2); }
+.select-value-color-green { background-color: rgba(0,135,107,0.2); }
+.select-value-color-blue { background-color: rgba(0,120,223,0.2); }
+.select-value-color-purple { background-color: rgba(103,36,222,0.2); }
+.select-value-color-pink { background-color: rgba(221,0,129,0.2); }
+.select-value-color-red { background-color: rgba(255,0,26,0.2); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="e4173286-c3ec-4a78-a52a-6fbc88f78edb" class="page sans"><header><h1 class="page-title">Tran Van Hoang</h1></header><div class="page-body"><p id="4bc59aa6-2ccb-49ae-ae77-bb87014f5550" class=""><a href="https://drive.google.com/file/d/1vLYxcCBJHqFF7UqjVXC2o2juHoA7et19/view?usp=sharing">Download my Resume</a></p><p id="f3617d18-65b0-4497-84db-ff6566faa7d0" class="block-color-red"><a href="https://hoangftran125.notion.site/Tran-Van-Hoang-e4173286c3ec4a78a52a6fbc88f78edb" target="_blank">Click here for <strong>Notion</strong> version</a></p><div id="edaf7c7d-7281-472b-a9fd-cf7d73178c94" class="column-list"><div id="07c618e6-53a6-4b5d-a0ec-085c9e876c19" style="width:68.75%" class="column"><h3 id="32880e03-c55a-40cb-a75f-410bb8199161" class="">About Me</h3><hr id="2d7c458c-fe3c-45bd-a8df-4ef91301c798"/><p id="14a5ea33-4d42-4dbf-8e8a-4f2af1e97567" class="">I am a Fresher Data Scientist with experience in Data Analysis skills, have the ability to build components for collecting, cleaning and processing a large amount of data. Be able to create dashboards, analyses reports to monitor performance metrics. I also have experience in applying Machine Learning and Deep Learning algorithms to solving Natural Language Processing problems, as well as scripting language like Python.
+Website : <a href="https://hoangftran.github.io/">https://hoangftran.github.io/</a></p><hr id="acf41e3e-e1c0-430c-8ed7-8fe003f386bd"/><h3 id="83e43c50-6edd-468e-b4e5-d817a1db6d80" class="">Key Strengths</h3><ul id="d77a6146-22e5-4d77-8a2b-b3680f8c6967" class="bulleted-list"><li>Learning agility</li></ul><ul id="de6834c2-1a61-4c0f-b0e7-4a247e406bb1" class="bulleted-list"><li>Attention to detail</li></ul><ul id="93ee3da2-6851-419e-9ce4-66886b572bf3" class="bulleted-list"><li>Self-management</li></ul></div><div id="e88457cb-d57d-4d6a-989c-d0edb2964ead" style="width:31.25%" class="column"><h3 id="e3e6392d-3906-49e2-ac13-eadd22469c1d" class="">Contact</h3><hr id="7a803aab-aee4-4115-8f6e-34852eabd01a"/><figure class="block-color-gray callout" style="white-space:pre-wrap;display:flex" id="b40da7b2-ed60-4d7f-91d4-534c7b047b1c"><div style="font-size:1.5em"><img class="icon" src="https://cdn.iconscout.com/icon/free/png-256/email-1818372-1541480.png"/></div><div style="width:100%"><mark class="highlight-red"><a href="mailto:hoangftran125@gmail.com"><strong>Email</strong></a></mark></div></figure><figure class="block-color-gray callout" style="white-space:pre-wrap;display:flex" id="95aa530e-03f0-47d3-b4de-f648f3a61f47"><div style="font-size:1.5em"><img class="icon" src="https://cdn.iconscout.com/icon/free/png-256/phone-2666572-2212584.png"/></div><div style="width:100%">+84915498459</div></figure><figure class="block-color-gray callout" style="white-space:pre-wrap;display:flex" id="d98e3e97-141b-45ff-834b-90b2cb957fa9"><div style="font-size:1.5em"><img class="icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/2048px-Octicons-mark-github.svg.png"/></div><div style="width:100%"><a href="https://github.com/hoangftran"><mark class="highlight-brown">Github</mark></a></div></figure><figure class="block-color-gray callout" style="white-space:pre-wrap;display:flex" id="fbcfe1dd-3b61-4143-9fc2-6b25497837ae"><div style="font-size:1.5em"><img class="icon" src="https://i.pinimg.com/originals/00/50/71/005071cbf1fdd17673607ecd7b7e88f6.png"/></div><div style="width:100%"><mark class="highlight-orange"><a href="https://hoangftran.github.io/"><strong>Website</strong></a></mark></div></figure><figure class="block-color-gray callout" style="white-space:pre-wrap;display:flex" id="6bd62dfa-f170-4629-8119-4b93441b81d5"><div style="font-size:1.5em"><img class="icon" src="data:image/png;base64,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"/></div><div style="width:100%"><a href="https://www.linkedin.com/in/tran-van-hoang-4339b4213/"><mark class="highlight-blue"><strong>Linkedin</strong></mark></a></div></figure></div></div><hr id="e4d898d3-99f4-47d4-be7b-271317f570a0"/><h1 id="e8948236-e69f-4f1d-b835-89bea2d25ea2" class=""><mark class="highlight-red">Technical Skills</mark></h1><div id="e05127e5-ab81-4692-a8f8-acf735adb0e4" class="column-list"><div id="90a191fb-de9a-4e10-97df-f31804c8b29d" style="width:33.33333333333333%" class="column"><figure class="block-color-gray callout" style="white-space:pre-wrap;display:flex" id="02027fce-fe86-44de-b756-c41660d57e94"><div style="font-size:1.5em"><img class="icon" src="https://cdn2.iconfinder.com/data/icons/computer-network-12/512/html-512.png"/></div><div style="width:100%"><strong>Programming languages</strong></div></figure><hr id="921e0896-7dc6-4787-adc3-9806097a66e4"/><ul id="a53d2d4f-bb79-4ee7-9984-0c9a998018ce" class="bulleted-list"><li>Python</li></ul><ul id="e4a6d01f-5250-4984-9b6c-c748aa63639b" class="bulleted-list"><li>SQL</li></ul></div><div id="ad76bc5c-d66b-44e8-9f2d-eded1735cb3a" style="width:33.33333333333333%" class="column"><figure class="block-color-gray callout" style="white-space:pre-wrap;display:flex" id="11f77da2-9156-4baf-9ecb-66567dea27bd"><div style="font-size:1.5em"><img class="icon" src="https://image.flaticon.com/icons/png/128/2519/2519334.png"/></div><div style="width:100%"><strong>Frameworks</strong></div></figure><hr id="51d383ce-e264-433e-aed2-d1f65bd9bde2"/><ul id="913702de-7d8f-4ef4-bcbe-e033d3ca3bb2" class="bulleted-list"><li>Scikit-learn</li></ul><ul id="ef8eb6d3-705c-4a5d-96b0-e5b08c6bc92b" class="bulleted-list"><li>Tensorflow</li></ul><ul id="dda38b7b-2a1e-49ad-8142-d919401d9a97" class="bulleted-list"><li>Pytorch</li></ul><ul id="a1e27db7-e92e-4a26-808a-585f44c5045d" class="bulleted-list"><li>Flask</li></ul></div><div id="e0158e25-3c2d-40b9-b504-254c003a6beb" style="width:33.33333333333333%" class="column"><figure class="block-color-gray callout" style="white-space:pre-wrap;display:flex" id="266e24b8-3246-4175-a5d7-74cef1d4235c"><div style="font-size:1.5em"><span class="icon">⚙</span></div><div style="width:100%"><strong>Tools</strong></div></figure><hr id="627b3ba4-d4d5-4e6f-8697-945e25c4b230"/><ul id="c60d9909-f16a-47bc-b017-b9d9c24b20f0" class="bulleted-list"><li>Git/Github</li></ul><ul id="b64c1d74-b292-4059-9899-9e5a133e4256" class="bulleted-list"><li>Jupyter notebook</li></ul><ul id="f5e16c82-587b-4d23-9ee9-9059cf10ca00" class="bulleted-list"><li>Power BI</li></ul><ul id="9b96d952-ff3e-4d62-95b6-dee073bbc6ab" class="bulleted-list"><li>Google Data Studio</li></ul><ul id="063f5934-f6af-48fd-8bf3-2f8c3b661dd8" class="bulleted-list"><li>Google Sheets</li></ul></div></div><hr id="f5e3ee69-34ef-4614-b2fb-ac147c2e85c7"/><h1 id="4c7c0369-d69f-414c-9ea4-01ffb2d93451" class=""><mark class="highlight-red">Professional Experience</mark></h1><p id="93800a25-b5b3-4a80-a20c-1a24e39f65e6" class="">
+</p><div id="423fda83-ddf8-486a-86ac-8fa24465e037" class="column-list"><div id="d1f323bf-b58c-4b94-93ff-6edab56a18f8" style="width:37.5%" class="column"><figure id="d68768f8-605a-4f2e-9dbb-7b60d6d46e08" class="image"><a href="https://itviec.com/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBMk1ZSHc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--e7d17fb5d61eb15ee965b46c55b5229893627565/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2RTNKbGMybDZaVjkwYjE5bWFXeHNXd2RwQW1nQmFRSVRBUT09IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--2a01e9c71520bf3a5dbdd847c9f7a98e7e4b39bc/Recruitment%20Collaboration%20-%2028th%20May%202021.jpg"><img style="width:432px" src="https://itviec.com/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBMk1ZSHc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--e7d17fb5d61eb15ee965b46c55b5229893627565/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2RTNKbGMybDZaVjkwYjE5bWFXeHNXd2RwQW1nQmFRSVRBUT09IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--2a01e9c71520bf3a5dbdd847c9f7a98e7e4b39bc/Recruitment%20Collaboration%20-%2028th%20May%202021.jpg"/></a></figure><p id="9bd0b32d-3360-4fe7-aa89-00817432171d" class="">
+</p><p id="0680c59b-a0c3-4392-822f-8df4374d3932" class="">
+</p></div><div id="44ba88a1-d9ee-4376-9e1f-b237c6ed825f" style="width:25%" class="column"><h2 id="093bff0d-6ca1-4a83-a042-0da74e6e87e8" class=""><mark class="highlight-gray">Apr 2021 —
+Jul 2021</mark></h2><hr id="c07a7cf4-011e-4eec-b31c-55dcfc604ebc"/><figure id="1e7a6a5b-7cdd-43a7-9f28-ff28a606a170" class="image"><a href="Tran%20Van%20Hoang%201e7a6a5b7cdd43a79f28ff28a606a170/Katalon-logo-vector.svg.png"><img style="width:108px" src="Tran%20Van%20Hoang%201e7a6a5b7cdd43a79f28ff28a606a170/Katalon-logo-vector.svg.png"/></a></figure></div><div id="ec6e7850-3b6f-4df6-9d95-fe2866855c5d" style="width:37.50000000000002%" class="column"><h2 id="9c3c8531-7c81-417a-ad3b-a0e3bfd7e5ac" class="">AI Engineer 
+<mark class="highlight-red">Katalon</mark></h2><hr id="54df78f2-0083-4f96-ac0c-a60f1863fee2"/><ul id="5536d986-a37e-4a1c-bd8a-d98539fe4085" class="bulleted-list"><li>Build Machine Learning pipeline to extract tutorials from single document using <strong>Spacy</strong></li></ul><ul id="6caa5019-7c76-4c6f-b28e-dd1ab7a6c6bf" class="bulleted-list"><li>Generate test script for automation testing based on tutorials extracted automatically</li></ul><p id="6e310687-ebde-4ac1-8c27-e0b31ed73e9e" class=""><code>Scrapy</code>   <code>Spacy</code>   <code>Natural Language Processing</code></p></div></div><div id="c29d0cd5-7e20-49f6-adf7-c8358459f8ee" class="column-list"><div id="6acbd1ee-8fce-4fae-8c8f-cfe127bd4b9a" style="width:37.5%" class="column"><figure id="da9635bc-f411-4375-ace3-7fbaefbe1ed1" class="image"><a href="Tran%20Van%20Hoang%201e7a6a5b7cdd43a79f28ff28a606a170/Untitled.png"><img style="width:1441px" src="Tran%20Van%20Hoang%201e7a6a5b7cdd43a79f28ff28a606a170/Untitled.png"/></a></figure></div><div id="052b32c7-d58e-42b6-9e41-1318310e30cb" style="width:25%" class="column"><h2 id="5e13ad32-38ec-4172-896e-46be96fbde80" class="block-color-gray">Feb 2020 —
+Feb 2021</h2><hr id="a23f6119-28a0-482a-a6e1-1306bb7402f7"/><figure id="3e90ded7-b9f0-430e-9526-46af23414ad1" class="image"><a href="Tran%20Van%20Hoang%201e7a6a5b7cdd43a79f28ff28a606a170/Fpt-icon.png"><img style="width:192px" src="Tran%20Van%20Hoang%201e7a6a5b7cdd43a79f28ff28a606a170/Fpt-icon.png"/></a></figure></div><div id="d8cbb2ca-4106-490b-aff3-4d1762ad0186" style="width:37.50000000000003%" class="column"><h2 id="d7e6de18-f5c4-4d64-81fa-2fb61746b0cd" class="">Data Scientist Intern
+<mark class="highlight-red">FPT Telecom</mark></h2><hr id="289dbf72-2023-44c7-835c-e943ae571d5b"/><ul id="6fb3496d-f085-4ee8-9cf3-bbb1fc2e6361" class="bulleted-list"><li>Design and build backend for FPT Telecom Chatbot with 60 percent of customer support rate over 10000 customer per month using <strong>Flask</strong> API.</li></ul><ul id="57687bf1-1e03-48c2-844e-e2a53c571b1f" class="bulleted-list"><li>Implement intent classification and entity extraction model with 0.993 accuracy using <strong>Rasa</strong> framework.</li></ul><ul id="6a2071d2-f473-44b5-ae28-689648186092" class="bulleted-list"><li>Track and analyze the performance of Chatbot using <strong>Jupyter Notebook</strong> and Power BI.</li></ul><p id="1447d2b9-4e72-4702-bbcc-f5bb2a58ea82" class=""><code>Flask</code>   <code>Rasa</code>   <code>Jupyter Notebook</code>   <code>Power BI</code></p></div></div><hr id="e1898945-5f01-4b50-826c-32e4446454f2"/><h1 id="9751e33e-badd-4d53-bd01-26ff90732bcf" class=""><mark class="highlight-red">Education</mark></h1><p id="01f1a06a-c373-41f0-92db-c05a31a45aaf" class="">
+</p><div id="03683843-bd4b-4942-8e25-c7138b7e321c" class="column-list"><div id="082c8d02-c329-425c-b607-11c192bf98b0" style="width:20.833333333333332%" class="column"><h2 id="3e4a682a-fd97-4101-b708-16676ccb0b5b" class="block-color-gray">Sep 2016 — Jun 2021</h2><hr id="12c81392-6edf-403c-a5b6-49eaad5f3b71"/></div><div id="de94421a-c432-465f-bee5-68130316a856" style="width:54.166666666666664%" class="column"><h2 id="912f5656-6118-4762-85eb-f065fb20a3d2" class=""><mark class="highlight-blue">University of Information Technology</mark></h2><hr id="2387fd74-d85e-438b-9034-6ad04eaa3d89"/><ul id="f4558b4d-0381-4a39-a9b7-121d5dcdc7f0" class="bulleted-list"><li>Major: Information System</li></ul><ul id="29dc2b48-3c95-47e3-b61e-e61f87189359" class="bulleted-list"><li>Advanced Education Program</li></ul><ul id="1e75672c-55c9-4f6a-b8a6-cf414580a624" class="bulleted-list"><li>In-major GPA: 3.60</li></ul></div><div id="90b1a53c-d196-44fb-a21f-bc1623b87d18" style="width:25.00000000000004%" class="column"><figure id="c26d6413-c1ed-475a-8a67-0abfd284f1e3" class="image"><a href="https://cs.uit.edu.vn/wp-content/uploads/2017/08/uit_dsc_0002_1-1.jpg"><img src="https://cs.uit.edu.vn/wp-content/uploads/2017/08/uit_dsc_0002_1-1.jpg"/></a></figure></div></div><hr id="a1732f41-e3e8-4b4c-8c9c-54694a20a279"/><h1 id="b6d789e1-859c-482d-8d04-8bd60deeac4f" class=""><mark class="highlight-red">Personal</mark> <mark class="highlight-red">Projects</mark></h1><div id="2c7e4dd1-f65c-4d77-92c6-cfc5df9d185f" class="collection-content"><h4 class="collection-title">Personal Projects</h4><table class="collection-content"><thead><tr><th><span class="icon property-icon"><svg viewBox="0 0 14 14" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.4);flex-shrink:0;-webkit-backface-visibility:hidden" class="typesTitle"><path d="M7.73943662,8.6971831 C7.77640845,8.7834507 7.81338028,8.8943662 7.81338028,9.00528169 C7.81338028,9.49823944 7.40669014,9.89260563 6.91373239,9.89260563 C6.53169014,9.89260563 6.19894366,9.64612676 6.08802817,9.30105634 L5.75528169,8.33978873 L2.05809859,8.33978873 L1.72535211,9.30105634 C1.61443662,9.64612676 1.2693662,9.89260563 0.887323944,9.89260563 C0.394366197,9.89260563 0,9.49823944 0,9.00528169 C0,8.8943662 0.0246478873,8.7834507 0.0616197183,8.6971831 L2.46478873,2.48591549 C2.68661972,1.90669014 3.24119718,1.5 3.90669014,1.5 C4.55985915,1.5 5.12676056,1.90669014 5.34859155,2.48591549 L7.73943662,8.6971831 Z M2.60035211,6.82394366 L5.21302817,6.82394366 L3.90669014,3.10211268 L2.60035211,6.82394366 Z M11.3996479,3.70598592 C12.7552817,3.70598592 14,4.24823944 14,5.96126761 L14,9.07922535 C14,9.52288732 13.6549296,9.89260563 13.2112676,9.89260563 C12.8169014,9.89260563 12.471831,9.59683099 12.4225352,9.19014085 C12.028169,9.6584507 11.3257042,9.95422535 10.5492958,9.95422535 C9.60035211,9.95422535 8.47887324,9.31338028 8.47887324,7.98239437 C8.47887324,6.58978873 9.60035211,6.08450704 10.5492958,6.08450704 C11.3380282,6.08450704 12.040493,6.33098592 12.4348592,6.81161972 L12.4348592,5.98591549 C12.4348592,5.38204225 11.9172535,4.98767606 11.1285211,4.98767606 C10.6602113,4.98767606 10.2411972,5.11091549 9.80985915,5.38204225 C9.72359155,5.43133803 9.61267606,5.46830986 9.50176056,5.46830986 C9.18133803,5.46830986 8.91021127,5.1971831 8.91021127,4.86443662 C8.91021127,4.64260563 9.0334507,4.44542254 9.19366197,4.34683099 C9.87147887,3.90316901 10.6232394,3.70598592 11.3996479,3.70598592 Z M11.1778169,8.8943662 C11.6830986,8.8943662 12.1760563,8.72183099 12.4348592,8.37676056 L12.4348592,7.63732394 C12.1760563,7.29225352 11.6830986,7.11971831 11.1778169,7.11971831 C10.5616197,7.11971831 10.056338,7.45246479 10.056338,8.0193662 C10.056338,8.57394366 10.5616197,8.8943662 11.1778169,8.8943662 Z M0.65625,11.125 L13.34375,11.125 C13.7061869,11.125 14,11.4188131 14,11.78125 C14,12.1436869 13.7061869,12.4375 13.34375,12.4375 L0.65625,12.4375 C0.293813133,12.4375 4.43857149e-17,12.1436869 0,11.78125 C-4.43857149e-17,11.4188131 0.293813133,11.125 0.65625,11.125 Z"></path></svg></span>Name</th><th><span class="icon property-icon"><svg viewBox="0 0 14 14" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.4);flex-shrink:0;-webkit-backface-visibility:hidden" class="typesText"><path d="M7,4.56818 C7,4.29204 6.77614,4.06818 6.5,4.06818 L0.5,4.06818 C0.223858,4.06818 0,4.29204 0,4.56818 L0,5.61364 C0,5.88978 0.223858,6.11364 0.5,6.11364 L6.5,6.11364 C6.77614,6.11364 7,5.88978 7,5.61364 L7,4.56818 Z M0.5,1 C0.223858,1 0,1.223858 0,1.5 L0,2.54545 C0,2.8216 0.223858,3.04545 0.5,3.04545 L12.5,3.04545 C12.7761,3.04545 13,2.8216 13,2.54545 L13,1.5 C13,1.223858 12.7761,1 12.5,1 L0.5,1 Z M0,8.68182 C0,8.95796 0.223858,9.18182 0.5,9.18182 L11.5,9.18182 C11.7761,9.18182 12,8.95796 12,8.68182 L12,7.63636 C12,7.36022 11.7761,7.13636 11.5,7.13636 L0.5,7.13636 C0.223858,7.13636 0,7.36022 0,7.63636 L0,8.68182 Z M0,11.75 C0,12.0261 0.223858,12.25 0.5,12.25 L9.5,12.25 C9.77614,12.25 10,12.0261 10,11.75 L10,10.70455 C10,10.4284 9.77614,10.20455 9.5,10.20455 L0.5,10.20455 C0.223858,10.20455 0,10.4284 0,10.70455 L0,11.75 Z"></path></svg></span>Project Description</th><th><span class="icon property-icon"><svg viewBox="0 0 14 14" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.4);flex-shrink:0;-webkit-backface-visibility:hidden" class="typesMultipleSelect"><path d="M4,3 C4,2.447715 4.447715,2 5,2 L12,2 C12.5523,2 13,2.447716 13,3 C13,3.55228 12.5523,4 12,4 L5,4 C4.447715,4 4,3.55228 4,3 Z M4,7 C4,6.447715 4.447715,6 5,6 L12,6 C12.5523,6 13,6.447716 13,7 C13,7.55228 12.5523,8 12,8 L5,8 C4.447715,8 4,7.55228 4,7 Z M4,11 C4,10.447715 4.447715,10 5,10 L12,10 C12.5523,10 13,10.447716 13,11 C13,11.55228 12.5523,12 12,12 L5,12 C4.447715,12 4,11.55228 4,11 Z M2,4 C1.44771525,4 1,3.55228475 1,3 C1,2.44771525 1.44771525,2 2,2 C2.55228475,2 3,2.44771525 3,3 C3,3.55228475 2.55228475,4 2,4 Z M2,8 C1.44771525,8 1,7.55228475 1,7 C1,6.44771525 1.44771525,6 2,6 C2.55228475,6 3,6.44771525 3,7 C3,7.55228475 2.55228475,8 2,8 Z M2,12 C1.44771525,12 1,11.5522847 1,11 C1,10.4477153 1.44771525,10 2,10 C2.55228475,10 3,10.4477153 3,11 C3,11.5522847 2.55228475,12 2,12 Z"></path></svg></span>Technologies</th></tr></thead><tbody><tr id="85f0816e-b3fa-4d00-8cd1-5ae90a019e8a"><td class="cell-title"><a href="Tran%20Van%20Hoang%201e7a6a5b7cdd43a79f28ff28a606a170/Personal%20Projects%202c7e4dd1f65c4d7792c6cfc5df9d185f/MOMO%20Recommendation%20System%2085f0816eb3fa4d008cd15ae90a019e8a.html"><img class="icon" src="https://developers.momo.vn/images/favicon/ms-icon-310x310.png"/>MOMO Recommendation System</a></td><td class="cell-nBWt">Implement recommendation model to recommend Mshop based on user’s history and references using ALS algorithm on Spark and build backend using Flask API.</td><td class="cell-Husj"><span class="selected-value select-value-color-gray">Flask</span><span class="selected-value select-value-color-orange">PySpark</span><span class="selected-value select-value-color-blue">React Native</span></td></tr><tr id="03602cf3-0b24-4124-9987-25516be02191"><td class="cell-title"><a href="Tran%20Van%20Hoang%201e7a6a5b7cdd43a79f28ff28a606a170/Personal%20Projects%202c7e4dd1f65c4d7792c6cfc5df9d185f/Chatbot%20for%20UIT%20Fanpage%2003602cf30b244124998725516be02191.html"><img class="icon" src="https://tuoitre.uit.edu.vn/wp-content/uploads/2015/07/logo-uit.png"/>Chatbot for UIT Fanpage</a></td><td class="cell-nBWt">Build a chatbot for UIT Facebook page that help students at UIT to search information about their time table, tuition and allow students to report their problems while studying at UIT.</td><td class="cell-Husj"><span class="selected-value select-value-color-green">FPT AI Conversation</span><span class="selected-value select-value-color-gray">Flask</span><span class="selected-value select-value-color-purple">Heroku</span></td></tr><tr id="907ccbd6-204f-48c4-bc60-a530ef7fe9b0"><td class="cell-title"><a href="Tran%20Van%20Hoang%201e7a6a5b7cdd43a79f28ff28a606a170/Personal%20Projects%202c7e4dd1f65c4d7792c6cfc5df9d185f/Project%20Title%20907ccbd6204f48c4bc60a530ef7fe9b0.html">Project Title</a></td><td class="cell-nBWt"></td><td class="cell-Husj"></td></tr></tbody></table></div><hr id="5c3c3501-1b35-4fe4-b2ab-78ff90c138d7"/><h1 id="b6b43a10-07e2-448a-9154-3f5313223ad8" class=""><mark class="highlight-red">Activities and Certificate</mark></h1><div id="12648c56-28da-4581-8647-108adf2b0545" class="column-list"><div id="1c7a3e03-23e1-478e-bf01-1d3d6007f175" style="width:6.25%" class="column"><p id="2720b71b-be66-437c-a70f-5ebe84f09ad1" class="">2021</p><p id="c123aa02-8ad7-4084-90a5-e935f409f3cb" class="">2020</p><p id="76316f7d-b802-47c1-816c-feea1a861cb0" class="">2019</p></div><div id="597ba4da-5ff0-4d15-b675-ef809429192f" style="width:93.75%" class="column"><p id="4aa69ae1-13a9-485a-8e3b-cb96f3b68481" class=""><strong>Dataquest</strong>, Data Scientist Path (ongoing)</p><p id="b28d5f5b-a6d8-4428-8c5a-09c9007a2269" class=""><strong>VEF Academy</strong>, Data Analytics Course</p><p id="ab1c5450-761a-4ca5-aae8-1476504bd449" class=""><strong>Facebook Developer Circles VietNam Innovation Challenge</strong>, Data Scientist track</p><p id="ad976f51-8287-4e77-b29e-fc5f32b8948a" class="">
+</p></div></div></div></article></body></html>
