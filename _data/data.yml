@@ -12,7 +12,6 @@ contact:
   twitter: 
 
 languages:
-  - idiom: Vietnamese (native)
   - idiom: English (IELTS 6.5 Overall)
 
 education:
@@ -37,7 +36,7 @@ skills:
       - <li>Git/Github</li>
       - <li>Jupyter Notebook</li>
       - <li>Power BI</li>
-      - <li>Azure Machine Learning Service</li>
+      - <li>Azure</li>
 
 # Profile
 profile: |
@@ -52,7 +51,7 @@ experience:
       <li>Build Machine Learning pipeline to extract tutorials from single document using Spacy.</li>
       <li>Generate test script for automation testing based on tutorials extracted automatically.</li>
     technologies_used: | 
-      Scrapy, Spacy, Natural Language Processing
+      <code>Scrapy</code>, <code>Spacy</code>, <code>Natural Language Processing</code>
   
   - role: Data Scientist Intern
     time: Feb 2020 – Feb 2021
@@ -62,18 +61,18 @@ experience:
       <li>Implement intent classification and entity extraction model with 0.993 accuracy using Rasa framework.</li>
       <li>Track and analyze the performance of Chatbot using Jupyter Notebook and Power BI.</li>
     technologies_used: | 
-      Flask API, Rasa, Jupyter Notebook, Power BI
+      <code>Flask API</code>, <code>Rasa</code>, <code>Jupyter Notebook</code>, <code>Power BI</code>
 
-publications:
-  - title: Random title of paper. An interesting one.
-    link: "#"
-    authors: John E. Doe
-    conference: Some conference, 2016
+# publications:
+#   - title: Random title of paper. An interesting one.
+#     link: "#"
+#     authors: John E. Doe
+#     conference: Some conference, 2016
 
-  - title: Second title of paper. An interesting one too.
-    link: "#"
-    authors: John E. Doe
-    conference: Some conference again, 2018
+#   - title: Second title of paper. An interesting one too.
+#     link: "#"
+#     authors: John E. Doe
+#     conference: Some conference again, 2018
 
 projects:
   - title: Chatbot for UIT Fanpage
