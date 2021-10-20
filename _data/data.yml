@@ -21,7 +21,7 @@ education:
     university: University of Information Technology
 
 skills:
-  - category: Programming languages
+  - category: Programming
     skill: 
       - Python
       - SQL
@@ -52,8 +52,8 @@ experience:
     time: Apr 2021 – Jun 2021
     company: Katalon
     details: |
-      - Build Machine Learning pipeline to extract tutorials from single document using Spacy
-      - Generate test script for automation testing based on tutorials extracted automatically
+      <li>Build Machine Learning pipeline to extract tutorials from single document using Spacy</li>
+      <li>Generate test script for automation testing based on tutorials extracted automatically</li>
     technologies_used: | 
       Scrapy, Spacy, Natural Language Processing
   
@@ -61,11 +61,11 @@ experience:
     time: Feb 2020 – Feb 2021
     company: FPT Telecom
     details: |
-      - Design and build backend for FPT Telecom Chatbot with 60 percent of customer support rate over
-        10000 customer per month using Flask API
-      - Implement intent classification and entity extraction model with 0.993 accuracy using Rasa frame-
-        work
-      - Track and analyze the performance of Chatbot using Jupyter Notebook and Power BI
+      <li>Design and build backend for FPT Telecom Chatbot with 60 percent of customer support rate over
+        10000 customer per month using Flask API</li>
+      <li>Implement intent classification and entity extraction model with 0.993 accuracy using Rasa frame-
+        work</li>
+      <li>Track and analyze the performance of Chatbot using Jupyter Notebook and Power BI</li>
     technologies_used: | 
       Flask API, Rasa, Jupyter Notebook, Power BI
 
