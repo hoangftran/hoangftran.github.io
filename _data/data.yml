@@ -53,8 +53,7 @@ experience:
     details: |
       <li>Design and implement well-engineered, easy-to-maintain, reliable, and bug-free code for NLP projects in collaboration with other AI Engineers.</li>
       <li>Fine-tune a Transformer architecture based language model (PhoBERT) for Sentence Boundary Detection task using Pytorch.</li>
-      <li>Research and implement a Spell-checking system to correct common Vietnamese misspelling errors
-using Pytorch.</li>
+      <li>Research and implement a Spell-checking system to correct common Vietnamese misspelling errors using Pytorch.</li>
     technologies_used: | 
       <code>Transformers</code>, <code>Pytorch</code>, <code>Natural Language Processing</code>
 
