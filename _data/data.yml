@@ -27,10 +27,12 @@ skills:
       - <li>PySpark</li>
   - category: Frameworks
     skill:
-      - <li>Scikit-learn</li>
-      - <li>Tensorflow</li>
       - <li>Pytorch</li>
+      - <li>Tensorflow</li>
+      - <li>Scikit-learn</li>
+      - <li>FastAPI</li>
       - <li>Flask</li>
+      
   - category: Tools
     skill:
       - <li>Git/Github</li>
@@ -40,10 +42,20 @@ skills:
 
 # Profile
 profile: |
-  I am a Fresher Data Scientist with experience in Data Analysis skills, have the ability to build components for collecting, cleaning and processing a large amount of data. Be able to create dashboards, analyses reports to monitor performance metrics. I also have experience in applying Machine Learning and Deep Learning algorithms to solving Natural Language Processing problems, as well as scripting language like Python.
+  Innovative Data Scientist/Machine Learning Engineer with experience in Data Analysis skills and the ability to build components for collecting, cleaning, and processing a large amount of data. Be able to create dashboards and analysis reports to monitor performance metrics. I also have experience in applying state-of-the-art Machine Learning and Deep Learning algorithms and techniques to solve Natural Language Processing problems.
 
 # Experience
 experience:
+  - role: Machine Learning Engineer
+    time: Oct 2021 – Present
+    company: TMT Solutions
+    details: |
+      <li>Design and implement well-engineered, easy-to-maintain, reliable, and bug-free code for NLP projects in collaboration with other AI Engineers.</li>
+      <li>Fine-tune a Transformer architecture based language model (PhoBERT) for Sentence Boundary Detection task using Pytorch.</li>
+      <li>Research and implement a Spell-checking system to correct common Vietnamese misspelling errors
+using Pytorch.</li>
+    technologies_used: | 
+      <code>Transformers</code>, <code>Pytorch</code>, <code>Natural Language Processing</code>
   - role: AI Engineer Intern
     time: Apr 2021 – Jun 2021
     company: Katalon
