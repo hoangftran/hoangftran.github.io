@@ -42,9 +42,9 @@ skills:
 
 # Profile
 profile: |
-  Innovative Data Scientist/Machine Learning Engineer with experience in Data Analysis skills and the ability to build components for collecting, cleaning, and processing a large amount of data. Be able to create dashboards and analysis reports to monitor performance metrics. I also have experience in applying state-of-the-art Machine Learning and Deep Learning algorithms and techniques to solve Natural Language Processing problems.
+  Innovative Data Scientist / AI Engineer with experience in Data Analysis skills and the ability to build components for collecting, cleaning, and processing a large amount of data. Be able to create dashboards and analysis reports to monitor performance metrics. I also have experience in applying state-of-the-art Machine Learning and Deep Learning algorithms and techniques to solve Natural Language Processing problems.
   <br>
-  You can download my CV <a href="https://drive.google.com/file/d/1oqfkqA8MBp2UM3BPEhFckQGODuMYNFP6/view?usp=sharing">here</a>
+  You can download my Resume pdf version <a href="https://drive.google.com/file/d/11y0GSAeLSLsihSwU0X0wI68PM3WoS3ud/view?usp=sharing">here</a>
 
 # Experience
 experience:
@@ -58,14 +58,14 @@ experience:
     technologies_used: | 
       <code>Transformers</code>, <code>Pytorch</code>, <code>Natural Language Processing</code>
 
-  - role: AI Engineer Intern
-    time: Apr 2021 – Jun 2021
-    company: Katalon
-    details: |
-      <li>Build Machine Learning pipeline to extract tutorials from single document using Spacy.</li>
-      <li>Generate test script for automation testing based on tutorials extracted automatically.</li>
-    technologies_used: | 
-      <code>Scrapy</code>, <code>Spacy</code>, <code>Natural Language Processing</code>
+  # - role: AI Engineer Intern
+  #   time: Apr 2021 – Jun 2021
+  #   company: Katalon
+  #   details: |
+  #     <li>Build Machine Learning pipeline to extract tutorials from single document using Spacy.</li>
+  #     <li>Generate test script for automation testing based on tutorials extracted automatically.</li>
+  #   technologies_used: | 
+  #     <code>Scrapy</code>, <code>Spacy</code>, <code>Natural Language Processing</code>
   
   - role: Data Scientist Intern
     time: Feb 2020 – Feb 2021
