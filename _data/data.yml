@@ -53,6 +53,8 @@ experience:
     details: |
       <li>Design and implement a scalable data pipeline for Voicebot/Chatbot using Spark SQL and Python</li>
       <li>Develop solutions for automate business processes and tasks</li>
+    technologies_used: |
+      <code>Python</code>, <code>Power BI</code>, <code>Spark</code>
 experience:
   - role: Machine Learning Engineer
     time: Oct 2021 - Aug 2022
