@@ -15,6 +15,9 @@ languages:
   - idiom: English (IELTS 6.5 Overall)
 
 education:
+  - degree: Computer Science
+    time: Dec 2023 - Present
+    university: University of Information Technology
   - degree: Information System
     time: Sep 2016 - Aug 2021
     university: University of Information Technology
@@ -47,7 +50,7 @@ profile: |
 
 # Experience
 experience:
-  - role: Operations AI Engineer
+  - role: Operations AI Analyst
     time: Aug 2022 - Present
     company: Home Credit Vietnam
     details: |
@@ -112,7 +115,7 @@ projects:
 volunteering:
   - time: 2023
     role: Home Credit Vietnam
-    company: DNA STARS Awards, Q2-2023
+    company: DNA STARS Awards, Q1-2023
     details: |
        
 
