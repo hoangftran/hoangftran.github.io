@@ -1,4 +1,4 @@
-name: Hoang Tran
+name: Hoang Tran Van
 support_dark_mode: true
 fork: false
 
@@ -16,7 +16,7 @@ languages:
 
 education:
   - degree: Information System
-    time: Sep 2016 – Aug 2021
+    time: Sep 2016 - Aug 2021
     university: University of Information Technology
 
 skills:
@@ -44,12 +44,18 @@ skills:
 profile: |
   Innovative Data Scientist / AI Engineer with experience in Data Analysis skills and the ability to build components for collecting, cleaning, and processing a large amount of data. Be able to create dashboards and analysis reports to monitor performance metrics. I also have experience in applying state-of-the-art Machine Learning and Deep Learning algorithms and techniques to solve Natural Language Processing problems.
   <br>
-  You can download my Resume pdf version <a href="https://drive.google.com/file/d/11y0GSAeLSLsihSwU0X0wI68PM3WoS3ud/view?usp=sharing">here</a>
 
 # Experience
 experience:
+  - role: Operations AI Engineer
+    time: Aug 2022 - Present
+    company: Home Credit Vietnam
+    details: |
+      <li>Design and implement a scalable data pipeline for Voicebot/Chatbot using Spark SQL and Python</li>
+      <li>Develop solutions for automate business processes and tasks</li>
+experience:
   - role: Machine Learning Engineer
-    time: Oct 2021 – Present
+    time: Oct 2021 - Aug 2022
     company: TMT Solutions
     details: |
       <li>Design and implement well-engineered, easy-to-maintain, reliable, and bug-free code for NLP projects in collaboration with other AI Engineers.</li>
@@ -68,7 +74,7 @@ experience:
   #     <code>Scrapy</code>, <code>Spacy</code>, <code>Natural Language Processing</code>
   
   - role: Data Scientist Intern
-    time: Feb 2020 – Feb 2021
+    time: Feb 2020 - Feb 2021
     company: FPT Telecom
     details: |
       <li>Design and build backend for FPT Telecom Chatbot with 60 percent of customer support rate over 10000 customer per month using Flask API.</li>
@@ -97,14 +103,14 @@ projects:
   - title: MOMO Recommendation System 
     link: https://www.github.com//hoangftran/FivX-Momo
     details: |
-      Implement recommendation model to recommend Mshop based on user’s history and references using ALS algorithm on
+      Implement recommendation model to recommend Mshop based on user's history and references using ALS algorithm on
       Spark and build backend using Flask API.
 
 # Volunteering
 volunteering:
-  - time: Ongoing
-    role: Dataquest
-    company: Data Scientist Path
+  - time: 2023
+    role: Home Credit Vietnam
+    company: DNA STARS Awards, Q2-2023
     details: |
        
 
